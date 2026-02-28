@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Training outputs
+**/saved_models/
+**/train_logs/
+**/results/
+**/*_time.csv
+**/*_result.csv
+
+# Large artifacts
+/data/
+/disk1/
+/*.bin
+/*.pt
+/*.pth
+/*.safetensors
+
+# IDE
+.vscode/
+*.log
