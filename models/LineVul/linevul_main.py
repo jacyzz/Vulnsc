@@ -49,22 +49,6 @@ import time
 
 logger = logging.getLogger(__name__)
 
-
-def resolve_local_model_path(name_or_path):
-    model_root = os.environ.get("VULNSC_MODEL_ROOT", "/disk1/hs/model")
-    mapping = {
-        "microsoft/codebert-base": "codebert-base",
-        "microsoft/graphcodebert-base": "graphcodebert-base",
-        "microsoft/unixcoder-base": "unixcoder-base",
-    }
-    if name_or_path in mapping:
-        local_path = os.path.join(model_root, mapping[name_or_path])
-        if os.path.isdir(local_path):
-            logger.info("Use local model path: %s -> %s", name_or_path, local_path)
-            return local_path
-        logger.warning("Local model path not found for %s: %s", name_or_path, local_path)
-    return name_or_path
-
 class InputFeatures(object):
     """A single training/test features for a example."""
     def __init__(self,
@@ -1028,8 +1012,6 @@ def main():
     parser.add_argument("--use_non_pretrained_tokenizer", default=False, action='store_true',
                         help="Whether to use non-pretrained bpe tokenizer.")
     args = parser.parse_args()
-    args.model_name_or_path = resolve_local_model_path(args.model_name_or_path)
-    args.tokenizer_name = resolve_local_model_path(args.tokenizer_name)
     # Setup CUDA, GPU
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     args.n_gpu = torch.cuda.device_count()

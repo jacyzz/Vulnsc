@@ -55,22 +55,6 @@ from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
 
 logger = logging.getLogger(__name__)
 
-
-def resolve_local_model_path(name_or_path):
-    model_root = os.environ.get("VULNSC_MODEL_ROOT", "/disk1/hs/model")
-    mapping = {
-        "microsoft/codebert-base": "codebert-base",
-        "microsoft/graphcodebert-base": "graphcodebert-base",
-        "microsoft/unixcoder-base": "unixcoder-base",
-    }
-    if name_or_path in mapping:
-        local_path = os.path.join(model_root, mapping[name_or_path])
-        if os.path.isdir(local_path):
-            logger.info("Use local model path: %s -> %s", name_or_path, local_path)
-            return local_path
-        logger.warning("Local model path not found for %s: %s", name_or_path, local_path)
-    return name_or_path
-
 MODEL_CLASSES = {
     'gpt2': (GPT2Config, GPT2LMHeadModel, GPT2Tokenizer),
     'openai-gpt': (OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer),
@@ -486,8 +470,6 @@ def main():
     
 
     args = parser.parse_args()
-        args.model_name_or_path = resolve_local_model_path(args.model_name_or_path)
-        args.tokenizer_name = resolve_local_model_path(args.tokenizer_name)
 
     # Setup distant debugging if needed
     if args.server_ip and args.server_port:

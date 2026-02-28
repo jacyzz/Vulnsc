@@ -10,8 +10,8 @@ cd CodeBERT
 CUDA_VISIBLE_DEVICES=2 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/0/valid.jsonl \
@@ -29,8 +29,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 CUDA_VISIBLE_DEVICES=2 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -53,8 +53,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/0/valid.jsonl \
@@ -73,8 +73,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -99,8 +99,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/1/valid.jsonl \
@@ -119,8 +119,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
@@ -144,8 +144,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/2/valid.jsonl \
@@ -164,8 +164,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
@@ -188,8 +188,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/3/valid.jsonl \
@@ -208,8 +208,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
@@ -235,8 +235,8 @@ cd ../GraphCodeBERT
 CUDA_VISIBLE_DEVICES=2 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/0/valid.jsonl \
@@ -254,8 +254,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 CUDA_VISIBLE_DEVICES=2 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -278,8 +278,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/0/valid.jsonl \
@@ -298,8 +298,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -324,8 +324,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/1/valid.jsonl \
@@ -344,8 +344,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
@@ -369,8 +369,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/2/valid.jsonl \
@@ -389,8 +389,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
@@ -413,8 +413,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/3/valid.jsonl \
@@ -433,8 +433,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/graphcodebert-base  \
---model_name_or_path=microsoft/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
@@ -461,8 +461,8 @@ cd ../UniXcoder
 CUDA_VISIBLE_DEVICES=2 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/0/valid.jsonl \
@@ -480,8 +480,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 CUDA_VISIBLE_DEVICES=2 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -504,8 +504,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/0/valid.jsonl \
@@ -524,8 +524,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -550,8 +550,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/1/valid.jsonl \
@@ -570,8 +570,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
@@ -595,8 +595,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/2/valid.jsonl \
@@ -615,8 +615,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
@@ -639,8 +639,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
 --eval_data_file=../../data/enhance/devign/gpt4o/3/valid.jsonl \
@@ -659,8 +659,8 @@ CUDA_VISIBLE_DEVICES=2 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/unixcoder-base \
---model_name_or_path=microsoft/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
@@ -687,8 +687,8 @@ cd ../LineVul
 CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -711,8 +711,8 @@ CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/0/train.jsonl \
@@ -735,8 +735,8 @@ CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/1/train.jsonl \
@@ -758,8 +758,8 @@ CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/2/train.jsonl \
@@ -781,8 +781,8 @@ CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 CUDA_VISIBLE_DEVICES=2 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=microsoft/codebert-base \
---model_name_or_path=microsoft/codebert-base \
+--tokenizer_name=/disk1/hs/model/codebert-base \
+--model_name_or_path=/disk1/hs/model/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/gpt4o/3/train.jsonl \
