@@ -7,11 +7,11 @@ export HF_DATASETS_OFFLINE=1
 
 cd CodeBERT
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/0/valid.jsonl \
@@ -26,11 +26,11 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -49,12 +49,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 python evaluator.py -a ../../data/enhance/devign/deepseek/0/test.jsonl -p ./saved_models/predictions.txt -m "cb" -e "none-enhance" -t "none" -s "123457"
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/0/valid.jsonl \
@@ -69,12 +69,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -95,12 +95,12 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/0/test.jsonl -p ./save
 
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/1/valid.jsonl \
@@ -115,12 +115,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
@@ -140,12 +140,12 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/1/test.jsonl -p ./save
 
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/2/valid.jsonl \
@@ -160,12 +160,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
@@ -184,12 +184,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 python evaluator.py -a ../../data/enhance/devign/deepseek/2/test.jsonl -p ./saved_models/predictions.txt -m "cb" -e "enhance" -t "oneshot" -s "123457"
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/3/valid.jsonl \
@@ -204,12 +204,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
@@ -232,11 +232,11 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/3/test.jsonl -p ./save
 
 cd ../GraphCodeBERT
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/0/valid.jsonl \
@@ -251,11 +251,11 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -274,12 +274,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 python evaluator.py -a ../../data/enhance/devign/deepseek/0/test.jsonl -p ./saved_models/predictions.txt -m "gcb" -e "none-enhance" -t "none" -s "123457"
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/0/valid.jsonl \
@@ -294,12 +294,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -320,12 +320,12 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/0/test.jsonl -p ./save
 
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/1/valid.jsonl \
@@ -340,12 +340,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
@@ -365,12 +365,12 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/1/test.jsonl -p ./save
 
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/2/valid.jsonl \
@@ -385,12 +385,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
@@ -409,12 +409,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 python evaluator.py -a ../../data/enhance/devign/deepseek/2/test.jsonl -p ./saved_models/predictions.txt -m "gcb" -e "enhance" -t "oneshot" -s "123457"
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/3/valid.jsonl \
@@ -429,12 +429,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/graphcodebert-base  \
---model_name_or_path=/disk1/hs/model/graphcodebert-base  \
+--tokenizer_name=/disk1/hs/model/microsoft/graphcodebert-base  \
+--model_name_or_path=/disk1/hs/model/microsoft/graphcodebert-base  \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
@@ -458,11 +458,11 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/3/test.jsonl -p ./save
 
 cd ../UniXcoder
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/0/valid.jsonl \
@@ -477,11 +477,11 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -500,12 +500,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 python evaluator.py -a ../../data/enhance/devign/deepseek/0/test.jsonl -p ./saved_models/predictions.txt -m "ux" -e "none-enhance" -t "none" -s "123457"
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/0/valid.jsonl \
@@ -520,12 +520,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -546,12 +546,12 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/0/test.jsonl -p ./save
 
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/1/valid.jsonl \
@@ -566,12 +566,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
@@ -591,12 +591,12 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/1/test.jsonl -p ./save
 
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/2/valid.jsonl \
@@ -611,12 +611,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
@@ -635,12 +635,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 python evaluator.py -a ../../data/enhance/devign/deepseek/2/test.jsonl -p ./saved_models/predictions.txt -m "ux" -e "enhance" -t "oneshot" -s "123457"
 
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_train \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
 --eval_data_file=../../data/enhance/devign/deepseek/3/valid.jsonl \
@@ -655,12 +655,12 @@ CUDA_VISIBLE_DEVICES=1 python run.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log
 
-CUDA_VISIBLE_DEVICES=1 python run.py \
+CUDA_VISIBLE_DEVICES=0 python run.py \
 --enhance \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/unixcoder-base \
---model_name_or_path=/disk1/hs/model/unixcoder-base \
+--tokenizer_name=/disk1/hs/model/microsoft/unixcoder-base \
+--model_name_or_path=/disk1/hs/model/microsoft/unixcoder-base \
 --do_eval \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
@@ -684,11 +684,11 @@ python evaluator.py -a ../../data/enhance/devign/deepseek/3/test.jsonl -p ./save
 
 cd ../LineVul
 
-CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
+CUDA_VISIBLE_DEVICES=0 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -708,11 +708,11 @@ CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
 --seed 123457  2>&1 | tee train.log \
 
 
-CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
+CUDA_VISIBLE_DEVICES=0 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/0/train.jsonl \
@@ -732,11 +732,11 @@ CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
 --seed 123457  2>&1 | tee train.log \
 
 
-CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
+CUDA_VISIBLE_DEVICES=0 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/1/train.jsonl \
@@ -755,11 +755,11 @@ CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log \
 
-CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
+CUDA_VISIBLE_DEVICES=0 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/2/train.jsonl \
@@ -778,11 +778,11 @@ CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
 --evaluate_during_training \
 --seed 123457  2>&1 | tee train.log \
 
-CUDA_VISIBLE_DEVICES=1 python linevul_main.py \
+CUDA_VISIBLE_DEVICES=0 python linevul_main.py \
 --output_dir=./saved_models \
 --model_type=roberta \
---tokenizer_name=/disk1/hs/model/codebert-base \
---model_name_or_path=/disk1/hs/model/codebert-base \
+--tokenizer_name=/disk1/hs/model/microsoft/codebert-base \
+--model_name_or_path=/disk1/hs/model/microsoft/codebert-base \
 --do_train \
 --do_test \
 --train_data_file=../../data/enhance/devign/deepseek/3/train.jsonl \
